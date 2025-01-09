@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@2.0.0/dist/phosphor.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    
+    <title>Recipe</title>
+</head>
+<body>
+    <!-- Header -->
+    <header role="banner">
+        <h1>Accessible Recipe</h1>
+        <nav role="navigation" aria-label="Breadcrumb">
+            <a href="#">Recipe</a>
+            <i class="ph ph-caret-right" aria-hidden="true"></i>
+            <p>Stracciatella (Italian Wedding Soup)</p>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main role="main">
+        <!-- Article -->
+        <article role="article">
+            <h1>Stracciatella (Italian Wedding Soup)</h1>
+            <!-- Dish Image & Description -->
+            <section class="dish_desc_container" aria-labelledby="dish-description">
+                <img src="assets/Stracciatella.jpg" alt="Stracciatella Dish">
+                <p id="dish-description">An Italian soup consisting of meat broth and small shreds of an egg-based mixture, prepared by drizzling the mixture into boiling broth and stirring.</p>
+            </section>
+
+            <!-- Ingredients List -->
+            <section aria-labelledby="ingredients-header">
+                <h3 id="ingredients-header">Ingredients</h3>
+                <ul>
+                    <li>3 1/2 c Chicken broth</li>
+                    <li>1 lb Fresh spinach; wash/trim/chop</li>
+                    <li>1 Egg</li>
+                    <li>1 c Grated parmesan cheese (or) 1 c Romano cheese; freshly grated</li>
+                    <li>Salt and pepper; to taste</li>
+                </ul>
+            </section>
+
+            <!-- Servings -->
+            <section aria-labelledby="servings-header">
+                <h3 id="servings-header">Servings</h3>
+                <p>4 servings</p>
+            </section>
+
+            <!-- Instructions -->
+            <section aria-labelledby="instructions-header">
+                <h3 id="instructions-header">Instructions</h3>
+                <ol>
+                    <li>Bring 1 cup of the broth to a boil</li>
+                    <li>Add spinach and cook until softened but still bright green.</li>
+                    <li>Remove spinach with a slotted spoon and set aside.</li>
+                    <li>Add remaining broth to pot.</li>
+                    <li>Bring to a boil. Meanwhile, beat egg lightly with a fork.</li>
+                    <li>Beat in 1/4 cup of cheese. When broth boils pour in egg mixture, stirring constantly for a few seconds until it cooks into "rags."</li>
+                    <li>Add reserved spinach, salt and pepper. </li>
+                    <li>Serve immediately, passing remaining cheese.</li>
+                </ol>
+                <br>
+                <p>NOTES: Someone asked for this recipe a while back. I believe this soup, known as "Stracciatella" is synonymous with Italian Wedding Soup, however, I seem to remember from I-don't-know-where that Italian Wedding Soup is the same as this but with the addition of tiny meatballs.</p>
+            </section>
+
+            <!-- Nutrition Table -->
+            <section class="nutrition" aria-labelledby="nutrition-header">
+                <h3 id="nutrition-header">Nutritional Information</h3>
+                <table>
+                    <caption>Nutritional Information per Serving</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Component</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Daily Value (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td>150 kcal</td>
+                            <td>7%</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>10 g</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>6 g</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates</td>
+                            <td>15 g</td>
+                            <td>5%</td>
+                        </tr>
+                        <tr>
+                            <td>Fiber</td>
+                            <td>2 g</td>
+                            <td>8%</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium</td>
+                            <td>400 mg</td>
+                            <td>17%</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </section>
+
+            <!-- Print Button -->
+            <div class="print_container">
+                <button id="printButton" aria-label="Print this recipe">Print this recipe</button>
+            </div>
+        </article>
+    </main>
+    
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <h2 class="footer__title">Saw Aung Kaung Thant</h2>
+        <ul class="footer_social" aria-label="Social Links">
+            <a href="https://www.instagram.com/yenwass/" target="_blank" class="footer__social-link" aria-label="Instagram Profile">
+                <i class="ph ph-instagram-logo"></i>
+            </a>
+        </ul>
+
+        <span class="footer__copy">
+            &#169; Copyright Sawney. All right reserved
+        </span>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script/main.js"></script>
+</body>
+</html>
