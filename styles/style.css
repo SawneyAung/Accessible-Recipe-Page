@@ -163,14 +163,14 @@ button:hover {
 footer {
     text-align: center;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: #222;
     color: #fff;
     border-radius: 5px;
 }
 
 footer h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
@@ -188,6 +188,73 @@ footer a {
 }
 
 footer a:hover {
+    color: #ffc107;
+}
+
+.contact_container {
+    display: grid; /* Use Flexbox */
+    flex-direction: column; /* Align items horizontally */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 30% 30%;
+    padding: 10px 0;
+}
+
+.footer__contact {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.footer__contact a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer__contact a:hover {
+    color: #ffc107;
+}
+
+.footer__newsletter {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__newsletter input {
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.footer__newsletter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer__newsletter button:hover {
+    background-color: #1976d2;
+}
+
+.footer__links {
+    margin: 10px 0;
+}
+
+.footer__link {
+    margin: 0 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #ff9800;
+}
+
+.footer__link:hover {
     color: #ffc107;
 }
 
